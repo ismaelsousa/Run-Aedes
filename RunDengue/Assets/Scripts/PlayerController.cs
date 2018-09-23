@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour {
 		//pontuação = 0;
 		//toda vez que o jogo começar ela recebe 0
 	//	PlayerPrefs.SetInt("pontuacao", 0);
-		PlayerPrefs.SetInt("record", 0);
+		//PlayerPrefs.SetInt("record", 0);
 	}
 
 
