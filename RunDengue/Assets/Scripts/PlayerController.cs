@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour {
 	//	pontos.text = pontuação.ToString ();
 
 		/*/Para verificar se o botão foi pressionado e estiver no chão
-		if(Input.GetButtonDown("Jump") && grounded || Input.GetKeyDown(KeyCode.UpArrow)&& grounded){	
+		if(Input.GetButtonDown("Jump") && grounded || Input.GetKeyDown(KeyCode.UpArrow)&& grounded&&!PauseMenu.GameIsPaused){	
 			
 			if (slide) {
 				slide = false;
@@ -73,7 +73,7 @@ public class PlayerController : MonoBehaviour {
 			PlayJumpSound ();
 
 		}
-		if(Input.GetButtonDown("Slide") && grounded||Input.GetKeyDown(KeyCode.DownArrow)&& grounded){
+		if(Input.GetButtonDown("Slide") && grounded||Input.GetKeyDown(KeyCode.DownArrow)&& grounded&&!PauseMenu.GameIsPaused){
 			if (!slide) {
 				//Para o colisor baixar
 				colisor.position = new Vector3 (colisor.position.x, colisor.position.y - 0.3f, colisor.position.z);
@@ -122,7 +122,7 @@ public class PlayerController : MonoBehaviour {
 
 	public void touchJump(){
 		//Para verificar se o botão foi pressionado e estiver no chão
-		if(grounded){				
+		if(grounded && !PauseMenu.GameIsPaused){				
 			if (slide) {
 				slide = false;
 				//aqui é apenas a verificação do colisor para quando ele estiver abaixado e pular o colider voltar ao seu lugar
@@ -137,7 +137,7 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	public void touchslide(){
-		if(grounded){
+		if(grounded && !PauseMenu.GameIsPaused){
 			//chama função para tocar audio do player
 			PlaySlideSound ();
 			if (!slide) {
