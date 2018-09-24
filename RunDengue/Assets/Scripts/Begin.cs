@@ -11,7 +11,9 @@ public class Begin : MonoBehaviour {
 	public void loadMain(){
 		SceneManager.LoadScene ("Loading");
 	}
-
+	public void Exit(){
+		Application.Quit();
+	}
 	//load scene curiosity
 	public void loadCuriosity(){
 		SceneManager.LoadScene ("Curiosidade");
@@ -25,7 +27,7 @@ public class Begin : MonoBehaviour {
 	//Load scene credits
 	public void loadTutorial(){
 		GameObject tempPrefab = Instantiate (load) as GameObject;
-		SceneManager.LoadScene ("Tutorial");
+		SceneManager.LoadSceneAsync ("Tutorial");
 	}
 
 
