@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class Begin : MonoBehaviour {
 
 	public GameObject load;
-
+	public GameObject botoes;
 
 
 	public void loadMain(){
@@ -25,8 +25,9 @@ public class Begin : MonoBehaviour {
 	}
 
 	//Load scene credits
-	public void loadTutorial(){
+	public void loadTutorial(){		
 		GameObject tempPrefab = Instantiate (load) as GameObject;
+		botoes.SetActive (false);
 		SceneManager.LoadSceneAsync ("Tutorial");
 	}
 
