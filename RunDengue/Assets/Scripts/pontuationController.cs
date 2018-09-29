@@ -10,9 +10,18 @@ public class pontuationController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		pontuation = 0;
+		
+		if (PlayerPrefs.GetInt ("video")==1) {// ele assistiu
+			pontuation = PlayerPrefs.GetInt("pontuation");
+			PlayerPrefs.SetInt ("video", 0);
+		}else{
 		//toda vez que o jogo começar ela recebe 0
-		PlayerPrefs.SetInt("pontuation", 0);
+			PlayerPrefs.SetInt("pontuation", 0);
+			pontuation = 0;
+			PlayerPrefs.SetInt("pontuation",0);
+		}
+
+
 	    //PlayerPrefs.SetInt("record", 0);
 		GameObject tran = GameObject.Find ("transition") as GameObject;
 		tran.GetComponent<Transition> ().transition ();
