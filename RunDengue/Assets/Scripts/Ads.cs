@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Advertisements;
+using UnityEngine.SceneManagement;
 
 public class Ads : MonoBehaviour {
 	
@@ -34,6 +35,7 @@ public class Ads : MonoBehaviour {
 			Debug.Log("Video completed - Offer a reward to the player");
 			// Reward your player here.
 			PlayerPrefs.SetInt ("video", 1);
+			SceneManager.LoadScene ("Main");
 
 		}else if(result == ShowResult.Skipped) {
 			Debug.LogWarning("Video was skipped - Do NOT reward the player");
