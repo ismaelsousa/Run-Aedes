@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour {
 
 	//	pontos.text = pontuação.ToString ();
 
-		/*Para verificar se o botão foi pressionado e estiver no chão
+		/*/Para verificar se o botão foi pressionado e estiver no chão
 		if(Input.GetButtonDown("Jump") && grounded || Input.GetKeyDown(KeyCode.UpArrow)&& grounded&&!PauseMenu.GameIsPaused){	
 			
 			if (slide) {

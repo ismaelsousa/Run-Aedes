@@ -10,17 +10,18 @@ public class Ads : MonoBehaviour {
 		Advertisement.Initialize ("2825519", false);
 	}
 
-	#if UNITY_ADS
+
 	private void HandleShowResult(ShowResult result)
 	{
 		switch (result)
 		{
 		case ShowResult.Finished:
-			Debug.Log("The ad was successfully shown.");
+			Debug.Log ("The ad was successfully shown.");
 			//
 			// YOUR CODE TO REWARD THE GAMER
 			// Give coins etc.
 			PlayerPrefs.SetInt ("video", 1);
+			SceneManager.LoadScene ("Main");
 			break;
 		case ShowResult.Skipped:
 			Debug.Log("The ad was skipped before reaching the end.");
@@ -50,6 +51,20 @@ public class Ads : MonoBehaviour {
 		Advertisement.Show("rewardedVideo", options);
 
 	}
+
+	public void ShowVideo()
+	{
+		if (Advertisement.isSupported) {
+			Debug.Log ("é suportado");
+		} else {
+			Debug.Log ("n é");
+		}
+		if (Advertisement.IsReady ()) {
+			ShowOptions options = new ShowOptions { resultCallback = HandleShowResult };
+			Advertisement.Show();
+		}
+	}
+
 	/*
 	void HandleShowResult (ShowResult result)
 	{
@@ -65,4 +80,5 @@ public class Ads : MonoBehaviour {
 			Debug.LogError("Video failed to show");
 		}
 	}*/
+
 }
