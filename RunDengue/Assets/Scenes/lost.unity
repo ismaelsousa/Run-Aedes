@@ -318,7 +318,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: 657cbdb5d8e03fe4dbe21f360067cb1e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -442,7 +442,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_TargetDisplay: 0
 --- !u!114 &1006275728
 MonoBehaviour:
@@ -667,7 +667,7 @@ GameObject:
   - component: {fileID: 1139203589}
   m_Layer: 5
   m_Name: ButtonContinua
-  m_TagString: Untagged
+  m_TagString: butao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -721,7 +721,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1006275728}
-          m_MethodName: Mostrevideo
+          m_MethodName: MostrevideoPremiado
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -741,7 +741,7 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
-          m_CallState: 0
+          m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
@@ -757,7 +757,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.94482756, g: 1, b: 0, a: 0}
+  m_Color: {r: 0.94509804, g: 1, b: 0, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -880,7 +880,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: e0f592f8ef87a7c4888f9dc472b4eebe, type: 3}
-    m_FontSize: 118
+    m_FontSize: 88
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -1109,7 +1109,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.7075, y: 0.29379258}
   m_AnchorMax: {x: 0.8975001, y: 0.43115693}
-  m_AnchoredPosition: {x: 182, y: 143}
+  m_AnchoredPosition: {x: 182.00002, y: 143}
   m_SizeDelta: {x: 78.1, y: -67.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1647595182
@@ -1140,7 +1140,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1006275728}
-          m_MethodName: ShowVideo
+          m_MethodName: MostreVideoNormal
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1299,7 +1299,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 4.754}
   m_AnchorMin: {x: 0.49, y: 0.38466084}
   m_AnchorMax: {x: 0.67625004, y: 0.65300006}
-  m_AnchoredPosition: {x: -224, y: -238}
+  m_AnchoredPosition: {x: -224, y: -237.99998}
   m_SizeDelta: {x: 129.9, y: -88.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1737361023
@@ -1391,6 +1391,11 @@ Prefab:
       propertyPath: record
       value: 
       objectReference: {fileID: 1737361023}
+    - target: {fileID: 114730395923324658, guid: 04834072a2ae01d4e81c80a7303e404a,
+        type: 2}
+      propertyPath: bot
+      value: 
+      objectReference: {fileID: 1139203590}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04834072a2ae01d4e81c80a7303e404a, type: 2}
   m_IsPrefabAsset: 0
@@ -1642,7 +1647,7 @@ GameObject:
   - component: {fileID: 2122990160}
   - component: {fileID: 2122990159}
   m_Layer: 5
-  m_Name: Image
+  m_Name: ImageMuda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 public class GameOver : MonoBehaviour {
 	public UnityEngine.UI.Text pontos;
 	public UnityEngine.UI.Text record;
+
 	// Use this for initialization
 	void Start () {
 		pontos.text = PlayerPrefs.GetInt ("pontuation").ToString();
 		record.text = PlayerPrefs.GetInt ("record").ToString ();
+
 	}
 
 

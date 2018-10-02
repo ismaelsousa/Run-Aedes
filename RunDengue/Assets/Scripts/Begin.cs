@@ -6,7 +6,9 @@ public class Begin : MonoBehaviour {
 
 	public GameObject load;
 	public GameObject botoes;
-
+	void Start(){
+		Time.timeScale = 1f;
+	}
 
 	public void loadMain(){
 		SceneManager.LoadScene ("Loading");

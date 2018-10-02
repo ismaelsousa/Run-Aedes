@@ -4,10 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Tutorial : MonoBehaviour {
 
-
-
 	void Start(){
-		
+		Time.timeScale = 1f;
 	}
 
 

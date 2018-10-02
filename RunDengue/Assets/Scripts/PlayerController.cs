@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour {
 
 	//	pontos.text = pontuação.ToString ();
 
-		/*/Para verificar se o botão foi pressionado e estiver no chão
+		//Para verificar se o botão foi pressionado e estiver no chão
 		if(Input.GetButtonDown("Jump") && grounded || Input.GetKeyDown(KeyCode.UpArrow)&& grounded&&!PauseMenu.GameIsPaused){	
 			
 			if (slide) {
@@ -86,7 +86,7 @@ public class PlayerController : MonoBehaviour {
 
 
 
-		/*///faço a verificação de tempo no slide
+		////faço a verificação de tempo no slide
 		if (slide) {
 			timeTemp += Time.deltaTime;
 			if (timeTemp >= slideTemp) {

@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MoveObject : MonoBehaviour {
-
+	private float max= 1.25f;
+	private bool subindo = true;
 	//public GameObject Load;
 
 	//criar um componente de audio
@@ -49,6 +50,13 @@ public class MoveObject : MonoBehaviour {
 			pontuado = true;
 			//add pontos
 			pontuationController.pontuation += 1;
+			if (Time.timeScale < 1.35f) {
+				Time.timeScale += 0.009f;
+				Debug.Log (Time.timeScale);
+			}
+
+		
+
 		}
 
 

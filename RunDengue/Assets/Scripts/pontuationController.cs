@@ -18,7 +18,7 @@ public class pontuationController : MonoBehaviour {
 		//toda vez que o jogo começar ela recebe 0
 			PlayerPrefs.SetInt("pontuation", 0);
 			pontuation = 0;
-			PlayerPrefs.SetInt("pontuation",0);
+			PlayerPrefs.SetInt("video",0);
 		}
 
 

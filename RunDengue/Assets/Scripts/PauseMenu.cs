@@ -9,6 +9,8 @@ public class PauseMenu : MonoBehaviour {
 	public GameObject butaoPlay;
 	public GameObject painel;
 
+	private float velocidadeJogo;
+
 	void Start(){
 		butaoPlay.SetActive (false);
 		painel.SetActive (false);
@@ -18,7 +20,7 @@ public class PauseMenu : MonoBehaviour {
 		butaoPause.SetActive (true);
 		butaoPlay.SetActive (false);
 		painel.SetActive (false);
-		Time.timeScale = 1f;
+		Time.timeScale = velocidadeJogo;
 		GameIsPaused = false;
 	}
 
@@ -26,6 +28,7 @@ public class PauseMenu : MonoBehaviour {
 		painel.SetActive (true);
 		butaoPause.SetActive (false);
 		butaoPlay.SetActive (true);
+		velocidadeJogo = Time.timeScale;
 		Time.timeScale = 0f;
 		GameIsPaused = true;
 	}
