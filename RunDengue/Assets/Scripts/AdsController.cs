@@ -8,6 +8,7 @@ public class AdsController : MonoBehaviour {
 	public static AdsController instancia;
 	// Use this for initialization
 	void Awake () {
+		
 
 		if (instancia == null) {
 			instancia = this;
@@ -24,7 +25,9 @@ public class AdsController : MonoBehaviour {
 	}
 
 
+
 	public void Mostrevideo(){
+		
 		Debug.Log ("Aguardadando");
 		if (Advertisement.IsReady ()) {
 			Advertisement.Show ("video");
@@ -34,11 +37,13 @@ public class AdsController : MonoBehaviour {
 	}
 
 	public void MostrevideoPremiado (){
+		
 		if (Advertisement.IsReady ()) {
 			ShowOptions options = new ShowOptions { resultCallback = HandleShowResult };
 			Advertisement.Show ("rewardedVideo", options);
 		} else {
-			GameObject.FindWithTag ("butao").GetComponentInChildren<UnityEngine.UI.Text>().text = "Carregando" ;
+			GameObject.FindWithTag ("butao").SetActive(false);
+			//GameObject.FindWithTag ("butao").GetComponentInChildren<UnityEngine.UI.Text>().text = "Carregando" ;
 		}
 	}
 		

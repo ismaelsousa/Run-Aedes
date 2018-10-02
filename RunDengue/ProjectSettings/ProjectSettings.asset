@@ -245,8 +245,8 @@ PlayerSettings:
   AndroidTargetArchitectures: 5
   AndroidSplashScreenScale: 1
   androidSplashScreen: {fileID: 2800000, guid: b0825994eb1698543ab118a26638cf5d, type: 3}
-  AndroidKeystoreName: 
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: C:/Users/ismae/Desktop/Run-Aedes/RunDengue/chave.keystore
+  AndroidKeyaliasName: chave
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
   AndroidIsGame: 1

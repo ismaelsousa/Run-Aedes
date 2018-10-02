@@ -900,15 +900,15 @@ RectTransform:
   m_GameObject: {fileID: 767284387}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -232}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 0.36894, y: 0.36894, z: 0.36894}
   m_Children: []
   m_Father: {fileID: 445746107}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.3625, y: 0.82600003}
   m_AnchorMax: {x: 0.6212499, y: 0.9654337}
-  m_AnchoredPosition: {x: 1.645874, y: -9.94458}
-  m_SizeDelta: {x: -7.8999996, y: 31.269218}
+  m_AnchoredPosition: {x: 7.299988, y: 17.666992}
+  m_SizeDelta: {x: 2711.5, y: 171.68}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &767284389
 MonoBehaviour:
@@ -931,11 +931,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: e0f592f8ef87a7c4888f9dc472b4eebe, type: 3}
-    m_FontSize: 38
-    m_FontStyle: 1
+    m_FontSize: 180
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 128
+    m_MaxSize: 180
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1481,15 +1481,15 @@ RectTransform:
   m_GameObject: {fileID: 1261810261}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.32373, y: 0.32373, z: 0.32373}
   m_Children: []
   m_Father: {fileID: 245700482}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00036621094, y: -8}
-  m_SizeDelta: {x: -0.0007019, y: 0.000061035}
+  m_AnchoredPosition: {x: 2.100006, y: -1.699997}
+  m_SizeDelta: {x: 494.7, y: 156.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1261810263
 MonoBehaviour:
@@ -1526,18 +1526,18 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: e0f592f8ef87a7c4888f9dc472b4eebe, type: 3}
-    m_FontSize: 87
-    m_FontStyle: 1
+    m_FontSize: 158
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 99
+    m_MaxSize: 158
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PLay
+  m_Text: Jogar
 --- !u!222 &1261810265
 CanvasRenderer:
   m_ObjectHideFlags: 0
