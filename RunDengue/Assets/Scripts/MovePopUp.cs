@@ -33,7 +33,7 @@ public class MovePopUp : MonoBehaviour {
 	}
 
 	IEnumerator scale() {
-		for (float i = 0f; i < 0.42f; i += 0.01f) {
+		for (float i = 0f; i < 1.6f; i += 0.1f) {
 			transform.localScale = new Vector3 (i, i, i);
 			yield return new WaitForSeconds (0.05f);
 		}
