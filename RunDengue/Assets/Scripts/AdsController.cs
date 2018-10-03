@@ -20,10 +20,15 @@ public class AdsController : MonoBehaviour {
 
 	}
 	void Start(){
-		
 		Advertisement.Initialize ("2825519", false);
 	}
-
+	public bool estaPronto(){
+		if (Advertisement.IsReady ()) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 
 
 	public void Mostrevideo(){

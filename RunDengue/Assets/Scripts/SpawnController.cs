@@ -39,7 +39,7 @@ public class SpawnController : MonoBehaviour {
 			
 			posicao = Random.Range (1, 100);
 
-			if (posicao > 75 && pontuationController.pontuation >=0) {
+			if (posicao > 75 && pontuationController.pontuation >= 0) {
 				y = posA;
 				//cria novo objeto
 				GameObject tempPrefab = Instantiate (mosquito) as GameObject; 
@@ -67,10 +67,16 @@ public class SpawnController : MonoBehaviour {
 				//pega o objeto criado e coloca ele no local que esta o spawn
 				tempPrefab.transform.position = new Vector3 (transform.position.x, y, transform.position.z);
 
-			} else if (posicao > 40 && posicao < 50 && pontuationController.pontuation >=  12) {
+			} else if (posicao > 40 && posicao < 50 && pontuationController.pontuation >= 12) {
 				y = posC;
 				//cria novo objeto
 				GameObject tempPrefab = Instantiate (garrafa) as GameObject; 
+				//pega o objeto criado e coloca ele no local que esta o spawn
+				tempPrefab.transform.position = new Vector3 (transform.position.x, y, transform.position.z);
+			} else {
+				y = posA;
+				//cria novo objeto
+				GameObject tempPrefab = Instantiate (mosquito) as GameObject; 
 				//pega o objeto criado e coloca ele no local que esta o spawn
 				tempPrefab.transform.position = new Vector3 (transform.position.x, y, transform.position.z);
 			}

@@ -7,6 +7,9 @@ public class Begin : MonoBehaviour {
 	public GameObject load;
 	public GameObject botoes;
 	void Start(){
+			//PlayerPrefs.SetInt("pontuacao", 0);
+			//PlayerPrefs.SetInt("record", 0);
+		    //PlayerPrefs.SetInt ("video", 0);
 		Time.timeScale = 1f;
 	}
 

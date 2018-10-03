@@ -977,7 +977,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4596165151607814, guid: eefc7f4b3bdc4fc439befefb169aaf70, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -185.83746
+      value: -222
       objectReference: {fileID: 0}
     - target: {fileID: 4596165151607814, guid: eefc7f4b3bdc4fc439befefb169aaf70, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1421,7 +1421,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4721819951432522, guid: bdba58f1c20c6f648858fa34ae66d7d8, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -120
+      value: -200.9992
       objectReference: {fileID: 0}
     - target: {fileID: 4721819951432522, guid: bdba58f1c20c6f648858fa34ae66d7d8, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1446,6 +1446,11 @@ Prefab:
     - target: {fileID: 4721819951432522, guid: bdba58f1c20c6f648858fa34ae66d7d8, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114019995741175524, guid: bdba58f1c20c6f648858fa34ae66d7d8,
+        type: 2}
+      propertyPath: forceJump
+      value: 430
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bdba58f1c20c6f648858fa34ae66d7d8, type: 2}
@@ -1568,7 +1573,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1340282773}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.598206, y: 0.58800507, z: 0.059838057}
+  m_LocalPosition: {x: 9.598206, y: 0.58800507, z: 0}
   m_LocalScale: {x: 1.0008558, y: 1.0008558, z: 1.0008558}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1590,10 +1595,10 @@ MonoBehaviour:
   pneu: {fileID: 1032599230859626, guid: 8372133b65780ab4698a30d5b996196e, type: 2}
   garrafa: {fileID: 1846073282644348, guid: 08304d59d47f3b6438fb4cb54b51f0ce, type: 2}
   rateSpawn: 1
-  posA: -1.464953
-  posB: -0.979
-  posC: -1.438133
-  posD: -1.438133
+  posA: -0.941
+  posB: -1.542935
+  posC: -1.507578
+  posD: -1.507578
   currenteTime: 1
 --- !u!1 &1505097195
 GameObject:
