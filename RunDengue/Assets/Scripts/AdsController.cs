@@ -20,7 +20,9 @@ public class AdsController : MonoBehaviour {
 
 	}
 	void Start(){
-		Advertisement.Initialize ("2825519", false);
+
+		//Advertisement.Initialize ("2825519", true);
+		Advertisement.Initialize ("2823805", false);
 	}
 	public bool estaPronto(){
 		if (Advertisement.IsReady ()) {
@@ -35,6 +37,7 @@ public class AdsController : MonoBehaviour {
 		
 		Debug.Log ("Aguardadando");
 		if (Advertisement.IsReady ()) {
+			Debug.Log ("Está prontinho");
 			Advertisement.Show ("video");
 		} else {
 			Debug.Log ("não esta pronto");
@@ -44,6 +47,7 @@ public class AdsController : MonoBehaviour {
 	public void MostrevideoPremiado (){
 		
 		if (Advertisement.IsReady ()) {
+			Debug.Log ("Está prontinho");
 			ShowOptions options = new ShowOptions { resultCallback = HandleShowResult };
 			Advertisement.Show ("rewardedVideo", options);
 		} else {

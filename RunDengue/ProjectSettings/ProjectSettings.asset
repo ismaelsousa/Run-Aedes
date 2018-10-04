@@ -156,7 +156,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.Company.IsmaelDenilson
   buildNumber: {}
-  AndroidBundleVersionCode: 3
+  AndroidBundleVersionCode: 7
   AndroidMinSdkVersion: 16
   AndroidTargetSdkVersion: 26
   AndroidPreferredInstallLocation: 1
