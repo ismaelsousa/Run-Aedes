@@ -40,6 +40,7 @@ public class PneuController : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D outher){
 		if (outher.tag == "Player"&& contou == false) {
 			pontuationController.pontuation -= 3;
+			pontuationController.pontuationToQuestion -= 3;
 			contou = true;
 			rigid.AddForce(new Vector2(forcaColisao, 400));
 			rigid.bodyType = RigidbodyType2D.Dynamic;

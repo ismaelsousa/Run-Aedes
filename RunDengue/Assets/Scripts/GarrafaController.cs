@@ -30,6 +30,7 @@ public class GarrafaController : MonoBehaviour {
 		if (outher.tag == "Player" && contou == false) {
 			transformes.Rotate(0, 0, 180f);
 			pontuationController.pontuation += 5;
+			pontuationController.pontuationToQuestion += 5;
 			contou = true;
 		}
 	}

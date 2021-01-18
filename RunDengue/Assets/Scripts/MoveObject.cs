@@ -50,15 +50,14 @@ public class MoveObject : MonoBehaviour {
 			pontuado = true;
 			//add pontos
 			pontuationController.pontuation += 1;
+			pontuationController.pontuationToQuestion += 1;
 			
 			
-			if (Time.timeScale < 1.25f) {
-				Time.timeScale += 0.005f;
-				Debug.Log (Time.timeScale);
-			}else{
-				Time.timeScale += 0.001f;
-				Debug.Log (Time.timeScale);
-			}
+			// if (Time.timeScale < 1.25f) {
+			// 	Time.timeScale += 0.005f;
+			// }else{
+			// 	Time.timeScale += 0.001f;
+			// }
 
 		
 

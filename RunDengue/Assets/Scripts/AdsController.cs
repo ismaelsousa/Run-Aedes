@@ -12,7 +12,6 @@ public class AdsController : MonoBehaviour {
 
 		if (instancia == null) {
 			instancia = this;
-			Debug.Log ("fui criado");
 		} else {
 			Destroy (instancia);
 		}

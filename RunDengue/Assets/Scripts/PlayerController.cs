@@ -160,6 +160,7 @@ public class PlayerController : MonoBehaviour {
 			//changer color after die
 			GetComponent<SpriteRenderer> ().color = new Color (255f, 0f, 0f,255f);
 			pontuationController.CheckPontuation ();
+			Time.timeScale = 1f;
 
 			SceneManager.LoadScene("lost");
 
