@@ -19,10 +19,13 @@ public class PauseQuestion : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
+   void showItems()
     {
-        
+        score.SetActive(true);
+        butaoPause.SetActive(true);
+        question.SetActive(false);
+        noQuestionButton.SetActive(false);
+        yesQuestionButton.SetActive(false);
     }
 
     public void checkAnswer(string answer){
@@ -30,23 +33,27 @@ public class PauseQuestion : MonoBehaviour
         if (answer == "yes") {
             if (correct) {
                 Debug.Log("ACertou");
-                return;
                 score.SetActive(true);
-                butaoPause.SetActive(true);
-                question.SetActive(false);
-                noQuestionButton.SetActive(false);
-                yesQuestionButton.SetActive(false);
-
+                showItems();
                 PauseMenu.GameIsPaused = false;
                 Time.timeScale = PauseMenu.velocidadeJogo;
+                return;
+
             };
 
         } else if (!correct) {
             Debug.Log("ACertou");
+            showItems();
+            PauseMenu.GameIsPaused = false;
+            Time.timeScale = PauseMenu.velocidadeJogo;
             return;
         };
-
+        showItems();
+        PauseMenu.GameIsPaused = false;
+        PauseMenu.velocidadeJogo += 0.1f;
+        Time.timeScale = PauseMenu.velocidadeJogo;
         Debug.Log("Errou");
+
     }
 
     public void yes() {
