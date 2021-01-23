@@ -50,7 +50,7 @@ public class PauseQuestion : MonoBehaviour
         };
         showItems();
         PauseMenu.GameIsPaused = false;
-        PauseMenu.velocidadeJogo += 0.1f;
+        PauseMenu.velocidadeJogo += 0.05f;
         Time.timeScale = PauseMenu.velocidadeJogo;
         Debug.Log("Errou");
 
@@ -69,6 +69,8 @@ public class PauseQuestion : MonoBehaviour
     public void showQuestion()
     {
         Debug.Log("AQUIIIIII");
+
+
         butaoPause.SetActive(false);
         question.SetActive(true);
         score.SetActive(false);
@@ -79,5 +81,14 @@ public class PauseQuestion : MonoBehaviour
         Time.timeScale = 0f;
         PauseMenu.GameIsPaused = true;
 
+        GameObject[] aedes = GameObject.FindGameObjectsWithTag("Aedes");
+        Debug.Log(aedes.Length);
+        foreach (GameObject aede in aedes)
+            Destroy(aede);
+
+        GameObject[] pneus = GameObject.FindGameObjectsWithTag("Pneu");
+        Debug.Log(pneus.Length);
+        foreach (GameObject pneu in pneus)
+            Destroy(pneu);
     }
 }
