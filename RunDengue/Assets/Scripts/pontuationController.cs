@@ -26,18 +26,26 @@ public class pontuationController : MonoBehaviour {
 		}			
 	    //PlayerPrefs.SetInt("record", 0);
 		GameObject tran = GameObject.Find ("transition") as GameObject;
-		tran.GetComponent<Transition> ().transition ();
+        if (tran)
+        {
+		    tran.GetComponent<Transition> ().transition ();
+        }
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		score.text = pontuation.ToString ();
-		if(pontuationToQuestion>=10){
-				pontuationToQuestion = 0;
-				Debug.Log("Fez 10 ponto, Criar popup para perguntas");
-				// Time.timeScale = 0f;
+		if(pontuationToQuestion >1){
+			pontuationToQuestion = 0;
+			Debug.Log("Fez 10 ponto, Criar popup para perguntas");
+            //Time.timeScale = 0f;
+            GameObject canvas = GameObject.Find("Canvas") as GameObject;
+            if (canvas)
+            {
+                canvas.GetComponent<PauseQuestion>().showQuestion();
+            }
 
-		}
+        }
 	}
 
 	public static void  CheckPontuation(){

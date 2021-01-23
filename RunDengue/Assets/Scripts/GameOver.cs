@@ -29,11 +29,11 @@ public class GameOver : MonoBehaviour {
 
 	void Update() {
 		//PARA SAIR
-		if (AdsController.instancia.estaPronto ()) {
-			botaoContinua.SetActive (true);
-		} else {
+		//if (AdsController.instancia.estaPronto ()) {
+			//botaoContinua.SetActive (true);
+		//} else {
 			botaoContinua.SetActive (false);
-		}
+		//}
 
 		if (Input.GetKey("escape"))
 			Application.Quit();
