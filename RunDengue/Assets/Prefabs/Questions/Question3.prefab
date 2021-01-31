@@ -67,10 +67,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6483451371412866933, guid: e2af84f1f270545c1987b097694f2ce9,
-        type: 3}
-      propertyPath: m_Text
-      value: "the sky is pink? 3\x03"
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2af84f1f270545c1987b097694f2ce9, type: 3}

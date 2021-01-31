@@ -5,7 +5,6 @@ using UnityEngine;
 public class PauseQuestion : MonoBehaviour
 {
 
-    public GameObject question;
     public GameObject lastQuestion;
     public GameObject localToSpawnQuestions;
     public GameObject score;
@@ -15,43 +14,42 @@ public class PauseQuestion : MonoBehaviour
     public List<GameObject> questions;
     public int selectedQuestion = -1;
 
+    public GameObject AlertQuestionRight;
+    public GameObject AlertQuestionWrong;
+
+
     // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    private void Update()
-    {
-        Debug.ClearDeveloperConsole();
-       // Debug.Log(Random.Range(0, 2));
-    }
-
     void showItems()
     {
         score.SetActive(true);
-        butaoPause.SetActive(true);
-        question.SetActive(false);
         noQuestionButton.SetActive(false);
         yesQuestionButton.SetActive(false);
     }
 
-    void cleanQuestion(bool delete)
+    void cleanQuestion(bool delete) // if true it is because thats right answer!
     {
         if (delete)
         {
             Destroy(lastQuestion);
             questions.Remove(questions[selectedQuestion]);
             selectedQuestion = -1;
+            AlertQuestionRight.SetActive(true);
         }
         else
         {
             Destroy(lastQuestion);
             selectedQuestion = -1;
+            AlertQuestionWrong.SetActive(true);
         }
        
 
     }
+
     public void checkAnswer(string answer){
 
         // clean lastQuestion after check responses
@@ -59,28 +57,28 @@ public class PauseQuestion : MonoBehaviour
         bool correct = questions[selectedQuestion].GetComponent<QuestionAnswer>().isTrue;
         if (answer == "yes") {
             if (correct) {
-                Debug.Log("ACertou");
+                Debug.Log("that's right!");
                 showItems();
-                PauseMenu.GameIsPaused = false;
-                Time.timeScale = PauseMenu.velocidadeJogo;
+                pontuationController.pontuation += 10;
+                PauseMenu.velocidadeJogo = 1f;
                 cleanQuestion(true);
                 return;
 
             };
 
         } else if (!correct) {
-            Debug.Log("ACertou");
+            Debug.Log("that's right!");
             showItems();
-            PauseMenu.GameIsPaused = false;
-            Time.timeScale = PauseMenu.velocidadeJogo;
+            pontuationController.pontuation += 10;
+            PauseMenu.velocidadeJogo = 1f;
             cleanQuestion(true);
             return;
         };
         showItems();
+        Debug.Log("that's wrong!");
         PauseMenu.GameIsPaused = false;
-        PauseMenu.velocidadeJogo += 0.05f;
-        Time.timeScale = PauseMenu.velocidadeJogo;
-        Debug.Log("Errou");
+        PauseMenu.velocidadeJogo += 0.05f;       
+        pontuationController.pontuation -= 5;
         cleanQuestion(false);
     }
 
@@ -88,6 +86,7 @@ public class PauseQuestion : MonoBehaviour
         Debug.Log("Press yes");
         checkAnswer("yes");      
     }
+
     public void no() {
         Debug.Log("Press no");
         checkAnswer("no");
@@ -117,7 +116,6 @@ public class PauseQuestion : MonoBehaviour
         lastQuestion.transform.SetParent(localToSpawnQuestions.transform);
 
         butaoPause.SetActive(false);
-       // question.SetActive(true);
         score.SetActive(false);
         noQuestionButton.SetActive(true);
         yesQuestionButton.SetActive(true);
@@ -135,5 +133,14 @@ public class PauseQuestion : MonoBehaviour
         Debug.Log(pneus.Length);
         foreach (GameObject pneu in pneus)
             Destroy(pneu);
+    }
+
+    public void Continue()
+    {
+        AlertQuestionWrong.SetActive(false);
+        AlertQuestionRight.SetActive(false);
+        butaoPause.SetActive(true);
+        PauseMenu.GameIsPaused = false;
+        Time.timeScale = PauseMenu.velocidadeJogo;
     }
 }

@@ -10,12 +10,17 @@ PrefabInstance:
     - target: {fileID: 8640648000837554957, guid: 71618b46b72cd44d5b6817c5c24459d9,
         type: 3}
       propertyPath: m_Text
-      value: the sky is pink? 2
+      value: 'the sky is green? '
       objectReference: {fileID: 0}
     - target: {fileID: 8640648002336402129, guid: 71618b46b72cd44d5b6817c5c24459d9,
         type: 3}
       propertyPath: m_Name
       value: Question2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8640648002336402132, guid: 71618b46b72cd44d5b6817c5c24459d9,
+        type: 3}
+      propertyPath: isTrue
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8640648002336402134, guid: 71618b46b72cd44d5b6817c5c24459d9,
         type: 3}

@@ -51,20 +51,7 @@ public class MoveObject : MonoBehaviour {
 			//add pontos
 			pontuationController.pontuation += 1;
 			pontuationController.pontuationToQuestion += 1;
-			
-			
-			// if (Time.timeScale < 1.25f) {
-			// 	Time.timeScale += 0.005f;
-			// }else{
-			// 	Time.timeScale += 0.001f;
-			// }
-
-		
-
 		}
-
-
-		
 	}
 
 	/*/função para verificar colisão
