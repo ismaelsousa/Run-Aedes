@@ -1935,10 +1935,28 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4780674299114948, guid: bdba58f1c20c6f648858fa34ae66d7d8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780674299114948, guid: bdba58f1c20c6f648858fa34ae66d7d8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 58283166700600106, guid: bdba58f1c20c6f648858fa34ae66d7d8,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 114019995741175524, guid: bdba58f1c20c6f648858fa34ae66d7d8,
         type: 3}
       propertyPath: forceJump
       value: 430
+      objectReference: {fileID: 0}
+    - target: {fileID: 114019995741175524, guid: bdba58f1c20c6f648858fa34ae66d7d8,
+        type: 3}
+      propertyPath: radius
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 212688139132381724, guid: bdba58f1c20c6f648858fa34ae66d7d8,
         type: 3}

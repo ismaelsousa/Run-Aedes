@@ -77,7 +77,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'the sky is blue? '
+  m_Text: O mosquito tem listras e manchas brancas?
 --- !u!114 &8640648000837554956
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -35,7 +35,7 @@ public class pontuationController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		score.text = pontuation.ToString ();
-		if(pontuationToQuestion >1){
+		if(pontuationToQuestion >=10){
 			pontuationToQuestion = 0;
 			Debug.Log("Fez 10 ponto, Criar popup para perguntas");
             //Time.timeScale = 0f;
