@@ -402,7 +402,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &211456159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,7 +496,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &245700482
 RectTransform:
   m_ObjectHideFlags: 0
@@ -638,8 +638,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.23, y: 1.06}
-  m_SizeDelta: {x: 3551.9663, y: 577.7685}
+  m_AnchoredPosition: {x: -0.103, y: 1.435}
+  m_SizeDelta: {x: 3480.9165, y: 483.50104}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &256946087
 MonoBehaviour:
@@ -676,10 +676,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e0f592f8ef87a7c4888f9dc472b4eebe, type: 3}
-    m_FontSize: 94
+    m_FontSize: 76
     m_FontStyle: 1
     m_BestFit: 1
-    m_MinSize: 14
+    m_MinSize: 10
     m_MaxSize: 138
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -687,11 +687,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Errou!
-
-    -5 Pontos
-
-    Velocidade aumentada!'
+  m_Text: "Errou! -5 Pontos\nVelocidade aumentada!\x03\nAcesse as curiosidades!"
 --- !u!222 &256946089
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1608,7 +1604,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1112598867
 Transform:
   m_ObjectHideFlags: 0
@@ -2442,7 +2438,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.6, y: -1.84}
+  m_AnchoredPosition: {x: -0.31, y: -1.84}
   m_SizeDelta: {x: 297.31, y: 135.77}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1747251330
