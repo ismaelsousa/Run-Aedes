@@ -31,6 +31,7 @@ public class BaldeController : MonoBehaviour {
 		if (outher.tag == "Player" && contou == false) {
 			anim.SetBool ("bateu", true);
 			pontuationController.pontuation += 3;
+			pontuationController.pontuationToQuestion += 3;
 			contou = true;
 		}
 	}

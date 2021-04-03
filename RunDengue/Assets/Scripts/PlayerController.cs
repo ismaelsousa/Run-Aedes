@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour {
 	public float slideTemp;
 	public float timeTemp;
 	private bool slide;
-
+	public float radius = 0.1f;
 	//controla a força do pulo
 	public int forceJump = 1;
 	// Use this for initialization
@@ -61,8 +61,9 @@ public class PlayerController : MonoBehaviour {
 
 	//	pontos.text = pontuação.ToString ();
 
-		/*/Para verificar se o botão foi pressionado e estiver no chão
-		if(Input.GetButtonDown("Jump") && grounded || Input.GetKeyDown(KeyCode.UpArrow)&& grounded&&!PauseMenu.GameIsPaused){	
+	  //Para verificar se o botão foi pressionado e estiver no chão
+		if((Input.GetButtonDown("Jump") && grounded && !PauseMenu.GameIsPaused)
+			|| (Input.GetKeyDown(KeyCode.UpArrow)&& grounded && !PauseMenu.GameIsPaused)){	
 			
 			if (slide) {
 				slide = false;
@@ -87,7 +88,7 @@ public class PlayerController : MonoBehaviour {
 
 
 
-		/*///faço a verificação de tempo no slide
+		// faço a verificação de tempo no slide
 		if (slide) {
 			timeTemp += Time.deltaTime;
 			if (timeTemp >= slideTemp) {
@@ -104,7 +105,7 @@ public class PlayerController : MonoBehaviour {
 		//aqui temos o overlap que retorna true se tiver no chão e também passo a possição que ele deve ser criado 
 		//e passa qual layer ele 
 		//verifica
-		grounded = Physics2D.OverlapCircle(groundCheck.position, 0.7f, whatIsGround);
+		grounded = Physics2D.OverlapCircle(groundCheck.position, radius, whatIsGround);
 	}
 
 
@@ -160,6 +161,7 @@ public class PlayerController : MonoBehaviour {
 			//changer color after die
 			GetComponent<SpriteRenderer> ().color = new Color (255f, 0f, 0f,255f);
 			pontuationController.CheckPontuation ();
+			Time.timeScale = 1f;
 
 			SceneManager.LoadScene("lost");
 

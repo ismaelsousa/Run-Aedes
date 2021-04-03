@@ -18,7 +18,7 @@ public class Ads : MonoBehaviour {
 
 	public void MostreVideoNormal()
 	{
-		AdsController.instancia.Mostrevideo ();
+	//	AdsController.instancia.Mostrevideo ();
 	}
 
 

@@ -7,6 +7,7 @@ public class Transition : MonoBehaviour {
 
 	void Start(){
 		Time.timeScale = 1f;
+        
 	}
 	public void transition(){
 		Invoke ("isEnable", 0.2f);

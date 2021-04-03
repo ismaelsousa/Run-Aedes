@@ -6,6 +6,7 @@ public class AnimationButton : MonoBehaviour {
 	bool diminui = true;
 	public GameObject[] popUp;
 	public int pos = 0;
+	
 
 	// Use this for initialization
 	void Start () {
@@ -20,6 +21,7 @@ public class AnimationButton : MonoBehaviour {
 			diminui = false;		
 		}
 	}
+	
 
 	IEnumerator treme() 
 	{
